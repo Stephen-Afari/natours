@@ -124,5 +124,5 @@ app.all('*', (req, res, next) => {
 app.use(globalErrorHandler);
 module.exports = app;
 
-//Git Token valid for 30 days from 13th Sept. 2022
-//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
+//Git Token valid for 30 days from 19th Sept. 2022
+//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
