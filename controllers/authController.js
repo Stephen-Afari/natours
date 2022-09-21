@@ -114,7 +114,6 @@ exports.isLoggedIn = async (req, res, next) => {
   }
   next();
 };
-
 exports.restrictTo = (...roles) => {
   return (req, res, next) => {
     //roles ['admin','lead-guide']
