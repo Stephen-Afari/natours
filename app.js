@@ -40,7 +40,28 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 //Set security HTTP headers
-app.use(helmet());
+//app.use(helmet());
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'", 'http://127.0.0.1:3000/*'],
+        baseUri: ["'self'"],
+        fontSrc: ["'self'", 'https:', 'data:'],
+        scriptSrc: [
+          "'self'",
+          'https://*.stripe.com',
+          'https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js',
+        ],
+        frameSrc: ["'self'", 'https://*.stripe.com'],
+        objectSrc: ["'none'"],
+        styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
+        upgradeInsecureRequests: [],
+      },
+    },
+  })
+);
 
 // app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 
@@ -112,6 +133,9 @@ app.use('/api/v1/bookings', bookingRouter);
 //app.use(helmet({ contentSecurityPolicy: false }));-a
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this Server`), 404);
+  //   app.all('*', (req, res, next) => {
+  //   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+  // });
   // res.status(400).json({
   //   status: 'fail',
   //   message: `Can't find ${req.originalUrl} on this Server`,
@@ -126,3 +150,4 @@ module.exports = app;
 
 //Git Token valid for 30 days from 19th Sept. 2022
 //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
+// "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /js",
