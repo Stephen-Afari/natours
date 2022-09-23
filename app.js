@@ -46,7 +46,7 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'", 'http://127.0.0.1:3000/*'],
+        defaultSrc: ["'self'", 'https://git.heroku.com/*'],
         baseUri: ["'self'"],
         fontSrc: ["'self'", 'https:', 'data:'],
         scriptSrc: [
