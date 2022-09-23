@@ -9,6 +9,7 @@ const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const viewRouter = require('./routes/viewRoutes');
 const cookieParser = require('cookie-parser');
+const csp = require('express-csp');
 const bookingController = require('./controllers/bookingController');
 //const cors = require('cors');
 
