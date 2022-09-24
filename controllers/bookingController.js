@@ -79,7 +79,7 @@ exports.webhookCheckout = (req, res, next) => {
   try {
     event = stripe.webhooks.constructEvent(
       //changed from req.body to req.rawBody
-      req.rawBody,
+      req.body,
       signature,
       process.env.STRIPE_WEBHOOK_SECRET
     );
