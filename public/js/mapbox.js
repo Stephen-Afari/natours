@@ -1,11 +1,11 @@
 export const displayMap = (locations) => {
   mapboxgl.accessToken =
-    'pk.eyJ1IjoiZGVtb3JnYW5hZmFyaSIsImEiOiJjbDd0ZHF0azgwZnVjM3dxbmljNXMyMmN1In0.ZSd25nqjQw_hQOJHcHN4vQ';
+    'pk.eyJ1IjoiZGVtb3JnYW5hZmFyaSIsImEiOiJjbDhoYWo0dzcwbTFpM25tbDE4bHR3YmpqIn0.4UPqXQiBGNAZW_e3t6N9FA';
   //a
   var map = new mapboxgl.Map({
     container: 'map',
     scrollZoom: false,
-    //   style: 'mapbox://styles/demorganafari/cl6hgewt3000g14ql2t8ito6c',
+    style: 'mapbox://styles/demorganafari/cl8harxby001315o91wm6k072',
     //   center: [-118.113491, 34.111745],
     //   zoom: 10,
     //   interactive: false,
