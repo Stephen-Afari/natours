@@ -4,6 +4,7 @@ const authController = require('../controllers/authController');
 const bookingController = require('../controllers/bookingController');
 const router = express.Router();
 
+router.use(viewsController.alerts);
 router.get(
   '/',
   //bookingController.createBookingCheckout,
@@ -20,4 +21,5 @@ router.post(
   authController.protect,
   viewsController.updateUserData
 );
+
 module.exports = router;
