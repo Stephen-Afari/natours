@@ -21,7 +21,7 @@ Facts and Tour guides:
 Tour Sites and location on map:
 ![detail3](https://github.com/Stephen-Afari/natours/assets/62534292/f725c8be-848e-4d97-8ae7-ef8f2e039567)
 
-Reviews by other Tourist:
+Reviews by other tourists:
 ![detail4](https://github.com/Stephen-Afari/natours/assets/62534292/b1254839-031f-4d99-8b73-b81a212fd3b1)
 
 Button to book a tour: 
