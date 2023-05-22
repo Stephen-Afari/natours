@@ -26,3 +26,9 @@ Reviews by other Tourist:
 
 Button to book a tour: 
 ![detail5](https://github.com/Stephen-Afari/natours/assets/62534292/853fb5fa-0d06-47b4-9a41-c87eed1e5f5f)
+
+Account Setting Page: A personalized page with the utility to upload photos, view bookings, reviews and billing information. 
+![Account Settings](https://github.com/Stephen-Afari/natours/assets/62534292/d03eb800-03a5-4687-98f1-d8cc3c09b169)
+
+Pasword Change Utility: Provides the ability to reset passwords.
+![Password Change Utility](https://github.com/Stephen-Afari/natours/assets/62534292/6bddb40b-e44b-4cc4-9209-de6d34a59ec1)
